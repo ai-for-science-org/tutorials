@@ -19,39 +19,30 @@ Repository of hands-on workshop materials for [**Foundation Models for Science W
 
 ---
 
-## 🚀 Installation (Post-workshop)
+## 🚀 Installation
 
-### 1. Clone the Repository
+### 1. Launch the Docker instance
 
-```bash
-git clone https://github.com/ai-for-science-org/private_tutorials.git
-cd private_tutorials
+The required packages are pre-installed in a Docker container. 
+
+You will need to configure your local computer using [the official Docker instructions](https://www.docker.com/get-started/). 
+
+```docker
+docker pull ghcr.io/carte-toronto/utoronto-fms-workshop-pytorch:latest
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+The official repository for this Docker is [here](https://github.com/CARTE-Toronto/utoronto-fms-workshop-pytorch).
 
-**Using conda:**
+> ***Important*** A `requirements.txt` file is provided as a courtesy only.  Please use the Docker container. 
 
-```bash
-conda create -n fomo-workshop python=3.9
-conda activate fomo-workshop
-```
-
-**Using venv:**
+### 2. Clone the Repository
 
 ```bash
-python -m venv fomo-env
-source fomo-env/bin/activate  # On macOS/Linux
-# fomo-env\Scripts\activate   # On Windows
+git clone https://github.com/ai-for-science-org/tutorials.git
+cd tutorials
 ```
 
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Launch Jupyter
+### 3. Launch Jupyter
 
 ```bash
 jupyter lab
